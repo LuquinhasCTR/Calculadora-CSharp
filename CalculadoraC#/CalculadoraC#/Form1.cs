@@ -24,7 +24,12 @@ namespace CalculadoraC_
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            this.Text = "Calculadora";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+         
         }
     }
 }

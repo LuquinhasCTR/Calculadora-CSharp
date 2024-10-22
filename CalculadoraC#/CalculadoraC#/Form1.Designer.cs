@@ -40,12 +40,12 @@
             this.BotaoVirgula = new System.Windows.Forms.Button();
             this.BotaoDois = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
+            this.BotaoQuatro = new System.Windows.Forms.Button();
+            this.BotaoSete = new System.Windows.Forms.Button();
+            this.BotaoCinco = new System.Windows.Forms.Button();
+            this.BotaoOito = new System.Windows.Forms.Button();
+            this.BotaoNove = new System.Windows.Forms.Button();
+            this.BotaoSeis = new System.Windows.Forms.Button();
             this.BotaoFracao = new System.Windows.Forms.Button();
             this.BotaoRaiz = new System.Windows.Forms.Button();
             this.BotaoPotencia = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.BotaoIgual.TabIndex = 0;
             this.BotaoIgual.Text = "=";
             this.BotaoIgual.UseVisualStyleBackColor = true;
+            this.BotaoIgual.Click += new System.EventHandler(this.BotaoIgual_Click);
             // 
             // BotaoAdicao
             // 
@@ -88,6 +89,7 @@
             this.BotaoAdicao.TabIndex = 1;
             this.BotaoAdicao.Text = "+";
             this.BotaoAdicao.UseVisualStyleBackColor = true;
+            this.BotaoAdicao.Click += new System.EventHandler(this.BotaoAdicao_Click);
             // 
             // BotaoSubtracao
             // 
@@ -100,6 +102,7 @@
             this.BotaoSubtracao.TabIndex = 2;
             this.BotaoSubtracao.Text = "-";
             this.BotaoSubtracao.UseVisualStyleBackColor = true;
+            this.BotaoSubtracao.Click += new System.EventHandler(this.BotaoSubtracao_Click);
             // 
             // BotaoMultiplcacao
             // 
@@ -112,6 +115,7 @@
             this.BotaoMultiplcacao.TabIndex = 3;
             this.BotaoMultiplcacao.Text = "x";
             this.BotaoMultiplcacao.UseVisualStyleBackColor = true;
+            this.BotaoMultiplcacao.Click += new System.EventHandler(this.BotaoMultiplcacao_Click);
             // 
             // BotaoDivisao
             // 
@@ -124,6 +128,7 @@
             this.BotaoDivisao.TabIndex = 4;
             this.BotaoDivisao.Text = "÷";
             this.BotaoDivisao.UseVisualStyleBackColor = true;
+            this.BotaoDivisao.Click += new System.EventHandler(this.BotaoDivisao_Click);
             // 
             // BotaoMaisMenos
             // 
@@ -147,6 +152,7 @@
             this.BotaoUm.TabIndex = 6;
             this.BotaoUm.Text = "1";
             this.BotaoUm.UseVisualStyleBackColor = true;
+            this.BotaoUm.Click += new System.EventHandler(this.BotaoUm_Click);
             // 
             // BotaoZero
             // 
@@ -170,6 +176,7 @@
             this.BotaoVirgula.TabIndex = 8;
             this.BotaoVirgula.Text = ",";
             this.BotaoVirgula.UseVisualStyleBackColor = true;
+            this.BotaoVirgula.Click += new System.EventHandler(this.BotaoVirgula_Click);
             // 
             // BotaoDois
             // 
@@ -181,6 +188,7 @@
             this.BotaoDois.TabIndex = 10;
             this.BotaoDois.Text = "2";
             this.BotaoDois.UseVisualStyleBackColor = true;
+            this.BotaoDois.Click += new System.EventHandler(this.BotaoDois_Click);
             // 
             // button6
             // 
@@ -193,75 +201,81 @@
             this.button6.TabIndex = 11;
             this.button6.Text = "3";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // BotaoQuatro
             // 
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(13, 306);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(90, 53);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "4";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.BotaoQuatro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoQuatro.Location = new System.Drawing.Point(13, 306);
+            this.BotaoQuatro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoQuatro.Name = "BotaoQuatro";
+            this.BotaoQuatro.Size = new System.Drawing.Size(90, 53);
+            this.BotaoQuatro.TabIndex = 12;
+            this.BotaoQuatro.Text = "4";
+            this.BotaoQuatro.UseVisualStyleBackColor = true;
+            this.BotaoQuatro.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // BotaoSete
             // 
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(13, 246);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(90, 53);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "7";
-            this.button8.UseVisualStyleBackColor = true;
+            this.BotaoSete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoSete.Location = new System.Drawing.Point(13, 246);
+            this.BotaoSete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoSete.Name = "BotaoSete";
+            this.BotaoSete.Size = new System.Drawing.Size(90, 53);
+            this.BotaoSete.TabIndex = 13;
+            this.BotaoSete.Text = "7";
+            this.BotaoSete.UseVisualStyleBackColor = true;
+            this.BotaoSete.Click += new System.EventHandler(this.BotaoSete_Click);
             // 
-            // button9
+            // BotaoCinco
             // 
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(110, 306);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(90, 53);
-            this.button9.TabIndex = 14;
-            this.button9.Text = "5";
-            this.button9.UseVisualStyleBackColor = true;
+            this.BotaoCinco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoCinco.Location = new System.Drawing.Point(110, 306);
+            this.BotaoCinco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoCinco.Name = "BotaoCinco";
+            this.BotaoCinco.Size = new System.Drawing.Size(90, 53);
+            this.BotaoCinco.TabIndex = 14;
+            this.BotaoCinco.Text = "5";
+            this.BotaoCinco.UseVisualStyleBackColor = true;
+            this.BotaoCinco.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // BotaoOito
             // 
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(110, 246);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(90, 53);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "8";
-            this.button10.UseVisualStyleBackColor = true;
+            this.BotaoOito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoOito.Location = new System.Drawing.Point(110, 246);
+            this.BotaoOito.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoOito.Name = "BotaoOito";
+            this.BotaoOito.Size = new System.Drawing.Size(90, 53);
+            this.BotaoOito.TabIndex = 15;
+            this.BotaoOito.Text = "8";
+            this.BotaoOito.UseVisualStyleBackColor = true;
+            this.BotaoOito.Click += new System.EventHandler(this.BotaoOito_Click);
             // 
-            // button11
+            // BotaoNove
             // 
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(206, 246);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(90, 53);
-            this.button11.TabIndex = 16;
-            this.button11.Text = "9";
-            this.button11.UseVisualStyleBackColor = true;
+            this.BotaoNove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoNove.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoNove.Location = new System.Drawing.Point(206, 246);
+            this.BotaoNove.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoNove.Name = "BotaoNove";
+            this.BotaoNove.Size = new System.Drawing.Size(90, 53);
+            this.BotaoNove.TabIndex = 16;
+            this.BotaoNove.Text = "9";
+            this.BotaoNove.UseVisualStyleBackColor = true;
+            this.BotaoNove.Click += new System.EventHandler(this.BotaoNove_Click);
             // 
-            // button12
+            // BotaoSeis
             // 
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(206, 306);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(90, 53);
-            this.button12.TabIndex = 17;
-            this.button12.Text = "6";
-            this.button12.UseVisualStyleBackColor = true;
+            this.BotaoSeis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoSeis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoSeis.Location = new System.Drawing.Point(206, 306);
+            this.BotaoSeis.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoSeis.Name = "BotaoSeis";
+            this.BotaoSeis.Size = new System.Drawing.Size(90, 53);
+            this.BotaoSeis.TabIndex = 17;
+            this.BotaoSeis.Text = "6";
+            this.BotaoSeis.UseVisualStyleBackColor = true;
+            this.BotaoSeis.Click += new System.EventHandler(this.button12_Click);
             // 
             // BotaoFracao
             // 
@@ -274,6 +288,7 @@
             this.BotaoFracao.TabIndex = 18;
             this.BotaoFracao.Text = "1/x";
             this.BotaoFracao.UseVisualStyleBackColor = true;
+            this.BotaoFracao.Click += new System.EventHandler(this.BotaoFracao_Click);
             // 
             // BotaoRaiz
             // 
@@ -286,6 +301,7 @@
             this.BotaoRaiz.TabIndex = 19;
             this.BotaoRaiz.Text = "²√x.";
             this.BotaoRaiz.UseVisualStyleBackColor = true;
+            this.BotaoRaiz.Click += new System.EventHandler(this.BotaoRaiz_Click);
             // 
             // BotaoPotencia
             // 
@@ -298,6 +314,7 @@
             this.BotaoPotencia.TabIndex = 20;
             this.BotaoPotencia.Text = "x²";
             this.BotaoPotencia.UseVisualStyleBackColor = true;
+            this.BotaoPotencia.Click += new System.EventHandler(this.BotaoPotencia_Click);
             // 
             // BotaoPorcentagem
             // 
@@ -310,6 +327,7 @@
             this.BotaoPorcentagem.TabIndex = 21;
             this.BotaoPorcentagem.Text = "%";
             this.BotaoPorcentagem.UseVisualStyleBackColor = true;
+            this.BotaoPorcentagem.Click += new System.EventHandler(this.BotaoPorcentagem_Click);
             // 
             // BotaoCE
             // 
@@ -322,6 +340,7 @@
             this.BotaoCE.TabIndex = 22;
             this.BotaoCE.Text = "CE";
             this.BotaoCE.UseVisualStyleBackColor = true;
+            this.BotaoCE.Click += new System.EventHandler(this.BotaoCE_Click);
             // 
             // BotaoC
             // 
@@ -334,6 +353,7 @@
             this.BotaoC.TabIndex = 23;
             this.BotaoC.Text = "C";
             this.BotaoC.UseVisualStyleBackColor = true;
+            this.BotaoC.Click += new System.EventHandler(this.BotaoC_Click);
             // 
             // button1
             // 
@@ -423,12 +443,12 @@
             this.Controls.Add(this.BotaoPotencia);
             this.Controls.Add(this.BotaoRaiz);
             this.Controls.Add(this.BotaoFracao);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.BotaoSeis);
+            this.Controls.Add(this.BotaoNove);
+            this.Controls.Add(this.BotaoOito);
+            this.Controls.Add(this.BotaoCinco);
+            this.Controls.Add(this.BotaoSete);
+            this.Controls.Add(this.BotaoQuatro);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.BotaoDois);
             this.Controls.Add(this.BotaoVirgula);
@@ -466,12 +486,12 @@
         private System.Windows.Forms.Button BotaoVirgula;
         private System.Windows.Forms.Button BotaoDois;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button BotaoQuatro;
+        private System.Windows.Forms.Button BotaoSete;
+        private System.Windows.Forms.Button BotaoCinco;
+        private System.Windows.Forms.Button BotaoOito;
+        private System.Windows.Forms.Button BotaoNove;
+        private System.Windows.Forms.Button BotaoSeis;
         private System.Windows.Forms.Button BotaoFracao;
         private System.Windows.Forms.Button BotaoRaiz;
         private System.Windows.Forms.Button BotaoPotencia;

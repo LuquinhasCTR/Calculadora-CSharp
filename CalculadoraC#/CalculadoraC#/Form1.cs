@@ -238,6 +238,11 @@ namespace CalculadoraC_
             textBox1.Text = textBox1.Text + "0";
         }
 
+        private void BotaoApagar_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text!=string.Empty) { textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1); }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
 

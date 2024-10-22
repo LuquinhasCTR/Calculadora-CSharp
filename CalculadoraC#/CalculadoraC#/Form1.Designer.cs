@@ -364,6 +364,7 @@
             this.BotaoApagar.TabIndex = 24;
             this.BotaoApagar.Text = "⌫";
             this.BotaoApagar.UseVisualStyleBackColor = true;
+            this.BotaoApagar.Click += new System.EventHandler(this.BotaoApagar_Click);
             // 
             // textBox1
             // 

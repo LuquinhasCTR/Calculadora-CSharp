@@ -180,16 +180,17 @@ namespace CalculadoraC_
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Código não implementado para este botão","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            this.ShowDialog();
         }
         private void BotaoFracao_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            this.ShowDialog();
         }
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+            this.ShowDialog();
         }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {
@@ -209,6 +210,7 @@ namespace CalculadoraC_
         private void BotaoMaisMenos_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.ShowDialog();
         }
         /// <summary>
         /// Apaga o último caracter da string

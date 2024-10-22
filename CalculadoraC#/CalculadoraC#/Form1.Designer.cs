@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BotaoIgual = new System.Windows.Forms.Button();
             this.BotaoAdicao = new System.Windows.Forms.Button();
             this.BotaoSubtracao = new System.Windows.Forms.Button();
@@ -164,6 +165,7 @@
             this.BotaoZero.TabIndex = 7;
             this.BotaoZero.Text = "0";
             this.BotaoZero.UseVisualStyleBackColor = true;
+            this.BotaoZero.Click += new System.EventHandler(this.BotaoZero_Click);
             // 
             // BotaoVirgula
             // 
@@ -366,6 +368,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "⌫";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -374,6 +377,7 @@
             this.textBox1.Location = new System.Drawing.Point(13, 58);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBox1.Name = "textBox1";
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox1.Size = new System.Drawing.Size(380, 62);
             this.textBox1.TabIndex = 25;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -426,7 +430,7 @@
             // versãoToolStripMenuItem
             // 
             this.versãoToolStripMenuItem.Name = "versãoToolStripMenuItem";
-            this.versãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versãoToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.versãoToolStripMenuItem.Text = "Versão";
             // 
             // Form1
@@ -461,6 +465,7 @@
             this.Controls.Add(this.BotaoAdicao);
             this.Controls.Add(this.BotaoIgual);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Form1";

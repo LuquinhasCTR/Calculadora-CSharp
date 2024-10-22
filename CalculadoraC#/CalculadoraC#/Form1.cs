@@ -8,17 +8,55 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CalculadoraC_
 {
     public partial class Form1 : Form
     {
+        public char operacao;
         public int contar = 0;
-        public string x;
+        
+        public string Erro;
+        private void Calculos()
+        {
+            double resultado=0.0;
+            string entrada = string.Empty;
+            string operando1=string.Empty;
+            string operando2 = entrada;
+            double num1, num2;
+            double.TryParse(operando1, out num1);
+            double.TryParse(operando2, out num2);
+            
+            if (operacao == '+')
+            {
+
+            }
+            else if (operacao == '-')
+            {
+
+            }
+            else if (operacao == 'x')
+            {
+
+            }
+            else if (operacao == '÷')
+            {
+                try
+                {
+
+                }
+                catch
+                {
+                    Erro = "Erro!";
+                }
+            } 
+        }
         public Form1()
         {
+            
             InitializeComponent();
-        
+            
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -102,6 +140,7 @@ namespace CalculadoraC_
         {
             contar++;
             textBox1.Text = textBox1.Text + "÷";
+            operacao = '÷';
         }
 
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
@@ -136,8 +175,25 @@ namespace CalculadoraC_
 
         private void BotaoAdicao_Click(object sender, EventArgs e)
         {
+            textBox1.Text = textBox1.Text + "+";
             contar++;
+            operacao = '+';
         }
-        
+
+        private void BotaoZero_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = textBox1.Text + "0";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i <= textBox1.Text.Length; i++)
+            {
+                if (i==textBox1.Text.Length)
+                {
+                    //textBox1.Text.Remove(i);
+                }
+            }
+        }
     }
 }

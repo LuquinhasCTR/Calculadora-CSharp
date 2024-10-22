@@ -14,9 +14,25 @@ namespace CalculadoraC_
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Armazena o tipo de operação
+        /// </summary>
         public char operacao;
-        double valor1 = 0, valor2 = 0;
+
+        /// <summary>
+        /// Armazena os valores atribuídos
+        /// </summary>
+        double valor1 = 0, valor2;
+
+        /// <summary>
+        /// Diz se a operação foi pressionada ou não
+        /// </summary>
         bool operacaoPressionada = false;
+
+        /// <summary>
+        /// Escreve os números no ecrã
+        /// </summary>
+        /// <param name="numero"></param>
         private void AdicionarNumero(string numero)
         {
             if ((textBox1.Text == "0") || operacaoPressionada)
@@ -24,6 +40,10 @@ namespace CalculadoraC_
             operacaoPressionada = false;
             textBox1.Text += numero;
         }
+
+        /// <summary>
+        /// Define a operação
+        /// </summary>
         private void SetOperacao(char op)
         {
             valor1 = Double.Parse(textBox1.Text);
@@ -55,6 +75,7 @@ namespace CalculadoraC_
         }
         private void BotaoOperacao_Click(object sender, EventArgs e)
         {
+            
             valor1 = Double.Parse(textBox1.Text);  // Armazena o primeiro valor
             Button botao = (Button)sender;
             operacao = Convert.ToChar(botao.Text);  // Armazena a operação
@@ -68,14 +89,33 @@ namespace CalculadoraC_
             Button botao = (Button)sender;
             textBox1.Text += botao.Text;
         }
+        private void BotaoZero_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero("0");
+        }
         private void BotaoUm_Click(object sender, EventArgs e)
         {
             AdicionarNumero("1");
         }
-
         private void BotaoDois_Click(object sender, EventArgs e)
         {
             AdicionarNumero("2");
+        }
+        private void BotaoTres_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero("3");
+        }
+        private void BotaoQuatro_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero("4");
+        }
+        private void BotaoCinco_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero("5");
+        }
+        private void BotaoSeis_Click(object sender, EventArgs e)
+        {
+            AdicionarNumero("6");
         }
         private void BotaoSete_Click(object sender, EventArgs e)
         {
@@ -91,21 +131,32 @@ namespace CalculadoraC_
         {
             AdicionarNumero("9");
         }
-
-        private void BotaoMultiplcacao_Click(object sender, EventArgs e)
+        private void BotaoVirgula_Click(object sender, EventArgs e)
         {
-            SetOperacao('*');
+            if (!textBox1.Text.Contains(","))
+            {
+                textBox1.Text += ",";
+            }
         }
-
+        private void BotaoAdicao_Click(object sender, EventArgs e)
+        {
+            SetOperacao('+');
+        }
         private void BotaoSubtracao_Click(object sender, EventArgs e)
         {
             SetOperacao('-');
         }
-
+        private void BotaoMultiplcacao_Click(object sender, EventArgs e)
+        {
+            SetOperacao('*');
+        }
+        private void BotaoDivisao_Click(object sender, EventArgs e)
+        {
+            SetOperacao('/');
+        }
         private void BotaoIgual_Click(object sender, EventArgs e)
         {
-            valor2 = Double.Parse(textBox1.Text);  // Captura o segundo valor
-
+            valor2 = Double.Parse(textBox1.Text);
             switch (operacao)
             {
                 case '+':
@@ -124,27 +175,12 @@ namespace CalculadoraC_
                         textBox1.Text = "Erro: Div/0";
                     break;
             }
-            operacaoPressionada = false;  // Reseta a operação pressionada
+            operacaoPressionada = false;
         }
-
-        private void BotaoDivisao_Click(object sender, EventArgs e)
-        {
-            SetOperacao('/');
-        }
-
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + "%";
         }
-
-        private void BotaoVirgula_Click(object sender, EventArgs e)
-        {
-            if (!textBox1.Text.Contains(","))
-            {
-                textBox1.Text += ",";
-            }
-        }
-
         private void BotaoFracao_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + "/";
@@ -164,42 +200,12 @@ namespace CalculadoraC_
         {
             textBox1.Text = string.Empty;
         }
-
-        private void BotaoAdicao_Click(object sender, EventArgs e)
-        {
-            SetOperacao('+');
-        }
-
-        private void BotaoZero_Click(object sender, EventArgs e)
-        {
-            AdicionarNumero("0");
-        }
-
-        private void BotaoTres_Click(object sender, EventArgs e)
-        {
-            AdicionarNumero("3");
-        }
-
-        private void BotaoQuatro_Click(object sender, EventArgs e)
-        {
-            AdicionarNumero("4");
-        }
-
-        private void BotaoCinco_Click(object sender, EventArgs e)
-        {
-            AdicionarNumero("5");
-        }
-
-        private void BotaoSeis_Click(object sender, EventArgs e)
-        {
-            AdicionarNumero("6");
-        }
-
         private void BotaoMaisMenos_Click(object sender, EventArgs e)
-        {
-            
+        {   
         }
-
+        /// <summary>
+        /// Apaga o último caracter da string
+        /// </summary>
         private void BotaoApagar_Click(object sender, EventArgs e)
         {
             if (textBox1.Text!=string.Empty) { textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1); }

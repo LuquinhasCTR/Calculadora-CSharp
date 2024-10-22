@@ -14,6 +14,7 @@ namespace CalculadoraC_
 {
     public partial class Form1 : Form
     {
+        public int contar = 1;
         /// <summary>
         /// Armazena o tipo de operação
         /// </summary>
@@ -91,48 +92,118 @@ namespace CalculadoraC_
         }
         private void BotaoZero_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("0");
         }
         private void BotaoUm_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("1");
         }
         private void BotaoDois_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("2");
         }
         private void BotaoTres_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("3");
         }
         private void BotaoQuatro_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("4");
         }
         private void BotaoCinco_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("5");
         }
         private void BotaoSeis_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("6");
         }
         private void BotaoSete_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("7");
         }
 
         private void BotaoOito_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("8");
         }
 
         private void BotaoNove_Click(object sender, EventArgs e)
         {
+            if (contar % 2 == 0)
+            {
+                textBox1.Text = "0";
+                valor1 = 0;
+                valor2 = 0;
+                AdicionarNumero("0");
+            }
             AdicionarNumero("9");
         }
         private void BotaoVirgula_Click(object sender, EventArgs e)
-        {
+        {  
             if (!textBox1.Text.Contains(","))
             {
                 textBox1.Text += ",";
@@ -194,6 +265,7 @@ namespace CalculadoraC_
         }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {
+            contar++;
             if (double.TryParse(textBox1.Text, out valor1) && valor1 >= 0)
             {
                 textBox1.Text = Math.Sqrt(valor1).ToString(); // Calcula a raiz quadrada

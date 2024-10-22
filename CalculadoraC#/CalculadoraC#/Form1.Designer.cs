@@ -142,6 +142,7 @@
             this.BotaoMaisMenos.TabIndex = 5;
             this.BotaoMaisMenos.Text = "+/-";
             this.BotaoMaisMenos.UseVisualStyleBackColor = true;
+            this.BotaoMaisMenos.Click += new System.EventHandler(this.BotaoMaisMenos_Click);
             // 
             // BotaoUm
             // 
@@ -203,6 +204,7 @@
             this.BotaoTres.TabIndex = 11;
             this.BotaoTres.Text = "3";
             this.BotaoTres.UseVisualStyleBackColor = true;
+            this.BotaoTres.Click += new System.EventHandler(this.BotaoTres_Click);
             // 
             // BotaoQuatro
             // 
@@ -214,6 +216,7 @@
             this.BotaoQuatro.TabIndex = 12;
             this.BotaoQuatro.Text = "4";
             this.BotaoQuatro.UseVisualStyleBackColor = true;
+            this.BotaoQuatro.Click += new System.EventHandler(this.BotaoQuatro_Click);
             // 
             // BotaoSete
             // 
@@ -237,6 +240,7 @@
             this.BotaoCinco.TabIndex = 14;
             this.BotaoCinco.Text = "5";
             this.BotaoCinco.UseVisualStyleBackColor = true;
+            this.BotaoCinco.Click += new System.EventHandler(this.BotaoCinco_Click);
             // 
             // BotaoOito
             // 
@@ -274,6 +278,7 @@
             this.BotaoSeis.TabIndex = 17;
             this.BotaoSeis.Text = "6";
             this.BotaoSeis.UseVisualStyleBackColor = true;
+            this.BotaoSeis.Click += new System.EventHandler(this.BotaoSeis_Click);
             // 
             // BotaoFracao
             // 

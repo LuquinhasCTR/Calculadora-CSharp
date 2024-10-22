@@ -40,7 +40,7 @@
             this.BotaoZero = new System.Windows.Forms.Button();
             this.BotaoVirgula = new System.Windows.Forms.Button();
             this.BotaoDois = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BotaoTres = new System.Windows.Forms.Button();
             this.BotaoQuatro = new System.Windows.Forms.Button();
             this.BotaoSete = new System.Windows.Forms.Button();
             this.BotaoCinco = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.BotaoPorcentagem = new System.Windows.Forms.Button();
             this.BotaoCE = new System.Windows.Forms.Button();
             this.BotaoC = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BotaoApagar = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.bomDiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -192,18 +192,17 @@
             this.BotaoDois.UseVisualStyleBackColor = true;
             this.BotaoDois.Click += new System.EventHandler(this.BotaoDois_Click);
             // 
-            // button6
+            // BotaoTres
             // 
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(206, 366);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(90, 53);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "3";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.BotaoTres.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoTres.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoTres.Location = new System.Drawing.Point(206, 366);
+            this.BotaoTres.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoTres.Name = "BotaoTres";
+            this.BotaoTres.Size = new System.Drawing.Size(90, 53);
+            this.BotaoTres.TabIndex = 11;
+            this.BotaoTres.Text = "3";
+            this.BotaoTres.UseVisualStyleBackColor = true;
             // 
             // BotaoQuatro
             // 
@@ -215,7 +214,6 @@
             this.BotaoQuatro.TabIndex = 12;
             this.BotaoQuatro.Text = "4";
             this.BotaoQuatro.UseVisualStyleBackColor = true;
-            this.BotaoQuatro.Click += new System.EventHandler(this.button7_Click);
             // 
             // BotaoSete
             // 
@@ -239,7 +237,6 @@
             this.BotaoCinco.TabIndex = 14;
             this.BotaoCinco.Text = "5";
             this.BotaoCinco.UseVisualStyleBackColor = true;
-            this.BotaoCinco.Click += new System.EventHandler(this.button9_Click);
             // 
             // BotaoOito
             // 
@@ -277,7 +274,6 @@
             this.BotaoSeis.TabIndex = 17;
             this.BotaoSeis.Text = "6";
             this.BotaoSeis.UseVisualStyleBackColor = true;
-            this.BotaoSeis.Click += new System.EventHandler(this.button12_Click);
             // 
             // BotaoFracao
             // 
@@ -357,18 +353,17 @@
             this.BotaoC.UseVisualStyleBackColor = true;
             this.BotaoC.Click += new System.EventHandler(this.BotaoC_Click);
             // 
-            // button1
+            // BotaoApagar
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(303, 141);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 38);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "⌫";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BotaoApagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotaoApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BotaoApagar.Location = new System.Drawing.Point(303, 141);
+            this.BotaoApagar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.BotaoApagar.Name = "BotaoApagar";
+            this.BotaoApagar.Size = new System.Drawing.Size(90, 38);
+            this.BotaoApagar.TabIndex = 24;
+            this.BotaoApagar.Text = "⌫";
+            this.BotaoApagar.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -440,7 +435,7 @@
             this.ClientSize = new System.Drawing.Size(407, 493);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BotaoApagar);
             this.Controls.Add(this.BotaoC);
             this.Controls.Add(this.BotaoCE);
             this.Controls.Add(this.BotaoPorcentagem);
@@ -453,7 +448,7 @@
             this.Controls.Add(this.BotaoCinco);
             this.Controls.Add(this.BotaoSete);
             this.Controls.Add(this.BotaoQuatro);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.BotaoTres);
             this.Controls.Add(this.BotaoDois);
             this.Controls.Add(this.BotaoVirgula);
             this.Controls.Add(this.BotaoZero);
@@ -490,7 +485,7 @@
         private System.Windows.Forms.Button BotaoZero;
         private System.Windows.Forms.Button BotaoVirgula;
         private System.Windows.Forms.Button BotaoDois;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BotaoTres;
         private System.Windows.Forms.Button BotaoQuatro;
         private System.Windows.Forms.Button BotaoSete;
         private System.Windows.Forms.Button BotaoCinco;
@@ -503,7 +498,7 @@
         private System.Windows.Forms.Button BotaoPorcentagem;
         private System.Windows.Forms.Button BotaoCE;
         private System.Windows.Forms.Button BotaoC;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BotaoApagar;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem bomDiaToolStripMenuItem;

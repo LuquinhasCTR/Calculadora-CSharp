@@ -14,44 +14,53 @@ namespace CalculadoraC_
 {
     public partial class Form1 : Form
     {
+        /// <summary>
+        /// Armazena o tipo de opereção (+,- e etc).
+        /// </summary>
         public char operacao;
+        /// <summary>
+        /// Armazena  o valor em double
+        /// </summary>
+        double valor1=0, valor2=0; 
+
         public int contar = 0;
-        
+        public int botaoigual=0;
         public string Erro;
-        private void Calculos()
-        {
-            double resultado=0.0;
-            string entrada = string.Empty;
-            string operando1=string.Empty;
-            string operando2 = entrada;
-            double num1, num2;
-            double.TryParse(operando1, out num1);
-            double.TryParse(operando2, out num2);
+
+        //private void Calculos()
+        //{
+        //    //double resultado=0.0;
+        //    //string entrada = string.Empty;
+        //    //string operando1=string.Empty;
+        //    //string operando2 = entrada;
+        //    //double num1, num2;
+        //    //double.TryParse(operando1, out num1);
+        //    //double.TryParse(operando2, out num2);
             
-            if (operacao == '+')
-            {
+        //    //if (operacao == '+')
+        //    //{
 
-            }
-            else if (operacao == '-')
-            {
+        //    //}
+        //    //else if (operacao == '-')
+        //    //{
 
-            }
-            else if (operacao == 'x')
-            {
+        //    //}
+        //    //else if (operacao == 'x')
+        //    //{
 
-            }
-            else if (operacao == '÷')
-            {
-                try
-                {
+        //    //}
+        //    //else if (operacao == '÷')
+        //    //{
+        //    //    try
+        //    //    {
 
-                }
-                catch
-                {
-                    Erro = "Erro!";
-                }
-            } 
-        }
+        //    //    }
+        //    //    catch
+        //    //    {
+        //    //        Erro = "Erro!";
+        //    //    }
+            
+        //}
         public Form1()
         {
             
@@ -71,7 +80,7 @@ namespace CalculadoraC_
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-         
+            
         }
 
         private void BotaoC_Click(object sender, EventArgs e)
@@ -122,7 +131,7 @@ namespace CalculadoraC_
         private void BotaoMultiplcacao_Click(object sender, EventArgs e)
         {
             contar++;
-            textBox1.Text = textBox1.Text + "x";
+            textBox1.Text = textBox1.Text + "*";
         }
 
         private void BotaoSubtracao_Click(object sender, EventArgs e)
@@ -133,14 +142,58 @@ namespace CalculadoraC_
 
         private void BotaoIgual_Click(object sender, EventArgs e)
         {
-            
+            switch (operacao)
+            {
+                case '+':
+                    try
+                    {
+                        
+                    }
+                    catch 
+                    {
+                        
+                    }
+                    break;
+                case '-':
+                    try
+                    {
+
+                    }
+                    catch
+                    {
+
+                    }
+                    break;
+                case 'x':
+                    try
+                    {
+
+                    }
+                    catch
+                    {
+
+                    }
+                    break;
+                case '÷':
+                    try
+                    {
+
+                    }
+                    catch
+                    {
+
+                    }
+                    break;
+            }
         }
 
         private void BotaoDivisao_Click(object sender, EventArgs e)
         {
             contar++;
             textBox1.Text = textBox1.Text + "÷";
-            operacao = '÷';
+            operacao = '/';
+            
+
         }
 
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
@@ -187,13 +240,7 @@ namespace CalculadoraC_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i <= textBox1.Text.Length; i++)
-            {
-                if (i==textBox1.Text.Length)
-                {
-                    //textBox1.Text.Remove(i);
-                }
-            }
+
         }
     }
 }

@@ -179,27 +179,36 @@ namespace CalculadoraC_
         }
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "%";
+            MessageBox.Show("Código não implementado para este botão","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
         private void BotaoFracao_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "/";
+            MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "^";
-        }
+            MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {
-            textBox1.Text = textBox1.Text + "²√";
+            if (double.TryParse(textBox1.Text, out valor1) && valor1 >= 0)
+            {
+                textBox1.Text = Math.Sqrt(valor1).ToString(); // Calcula a raiz quadrada
+            }
+            else
+            {
+                textBox1.Text = "Erro: Raiz Negativa";
+            }
         }
         private void BotaoCE_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;
         }
         private void BotaoMaisMenos_Click(object sender, EventArgs e)
-        {   
+        {
+            MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         /// <summary>
         /// Apaga o último caracter da string

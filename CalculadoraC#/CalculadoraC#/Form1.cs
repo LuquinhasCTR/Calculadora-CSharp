@@ -185,7 +185,6 @@ namespace CalculadoraC_
         {
             textBox1.Text = textBox1.Text + "/";
         }
-
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + "^";
@@ -195,7 +194,6 @@ namespace CalculadoraC_
         {
             textBox1.Text = textBox1.Text + "²√";
         }
-
         private void BotaoCE_Click(object sender, EventArgs e)
         {
             textBox1.Text = string.Empty;

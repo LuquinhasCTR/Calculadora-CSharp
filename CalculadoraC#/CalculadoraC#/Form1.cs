@@ -92,7 +92,7 @@ namespace CalculadoraC_
         }
         private void BotaoZero_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -103,7 +103,7 @@ namespace CalculadoraC_
         }
         private void BotaoUm_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -114,7 +114,7 @@ namespace CalculadoraC_
         }
         private void BotaoDois_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -125,7 +125,7 @@ namespace CalculadoraC_
         }
         private void BotaoTres_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -136,7 +136,7 @@ namespace CalculadoraC_
         }
         private void BotaoQuatro_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >=2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -147,7 +147,7 @@ namespace CalculadoraC_
         }
         private void BotaoCinco_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -158,7 +158,7 @@ namespace CalculadoraC_
         }
         private void BotaoSeis_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 0)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -169,7 +169,7 @@ namespace CalculadoraC_
         }
         private void BotaoSete_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -181,7 +181,7 @@ namespace CalculadoraC_
 
         private void BotaoOito_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -193,7 +193,7 @@ namespace CalculadoraC_
 
         private void BotaoNove_Click(object sender, EventArgs e)
         {
-            if (contar % 2 == 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -245,6 +245,9 @@ namespace CalculadoraC_
                     else
                         textBox1.Text = "Erro: Div/0";
                     break;
+                case '^':   
+                        textBox1.Text = Math.Pow(valor1, valor2).ToString(); // Calculo de potência                    
+                    break;
             }
             operacaoPressionada = false;
         }
@@ -260,8 +263,10 @@ namespace CalculadoraC_
         }
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.ShowDialog();
+            //MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //this.ShowDialog();
+            SetOperacao('^');
+            
         }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {

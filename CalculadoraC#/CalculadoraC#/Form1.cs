@@ -9,13 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
-
 namespace CalculadoraC_
 {
     public partial class Form1 : Form
     {
         public bool operacaoAtivada = false;
-        public int contar = 1;
         /// <summary>
         /// Armazena o tipo de operação
         /// </summary>
@@ -25,14 +23,12 @@ namespace CalculadoraC_
         /// Armazena os valores atribuídos
         /// </summary>
         double valor1 = 0, valor2;
-
         /// <summary>
         /// Diz se a operação foi pressionada ou não
         /// </summary>
         bool operacaoPressionada = false;
-
         /// <summary>
-        /// Escreve os números no ecrã
+        /// Escreve os números na tela
         /// </summary>
         /// <param name="numero"></param>
         private void AdicionarNumero(string numero)
@@ -42,7 +38,6 @@ namespace CalculadoraC_
             operacaoPressionada = false;
             textBox1.Text += numero;
         }
-
         /// <summary>
         /// Define a operação
         /// </summary>
@@ -52,20 +47,12 @@ namespace CalculadoraC_
             operacao = op;
             operacaoPressionada = true;
         }
-        private void ApagarRaiz()
+        /// <summary>
+        /// Apaga o resultado da operação anterior caso seja pressionado a tecla de um número
+        /// </summary>
+        private void Apagar()
         {
             if (operacaoAtivada==true)
-            {
-                textBox1.Text = "0";
-                valor1 = 0;
-                valor2 = 0;
-                AdicionarNumero("0");
-                operacaoAtivada = false;
-            }
-        }
-        private void ApagarPotencia()
-        {
-            if (operacaoAtivada == true)
             {
                 textBox1.Text = "0";
                 valor1 = 0;
@@ -83,12 +70,8 @@ namespace CalculadoraC_
             this.Text = "Calculadora";
             textBox1.Text = "0";  // Inicializa o TextBox com 0
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
+        { if (textBox1.Text == string.Empty) { textBox1.Text = "0"; } }
         private void BotaoC_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -99,7 +82,6 @@ namespace CalculadoraC_
         }
         private void BotaoOperacao_Click(object sender, EventArgs e)
         {
-            
             valor1 = Double.Parse(textBox1.Text);  // Armazena o primeiro valor
             Button botao = (Button)sender;
             operacao = Convert.ToChar(botao.Text);  // Armazena a operação
@@ -115,64 +97,52 @@ namespace CalculadoraC_
         }
         private void BotaoZero_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("0");
         }
         private void BotaoUm_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();   
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("1");
         }
         private void BotaoDois_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("2");
         }
         private void BotaoTres_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("3");
         }
         private void BotaoQuatro_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("4");
         }
         private void BotaoCinco_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("5");
         }
         private void BotaoSeis_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("6");
         }
         private void BotaoSete_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("7");
         }
-
         private void BotaoOito_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("8");
         }
-
         private void BotaoNove_Click(object sender, EventArgs e)
         {
-            ApagarPotencia();
-            ApagarRaiz();
+            Apagar();
             AdicionarNumero("9");
         }
         private void BotaoVirgula_Click(object sender, EventArgs e)
@@ -184,18 +154,22 @@ namespace CalculadoraC_
         }
         private void BotaoAdicao_Click(object sender, EventArgs e)
         {
+            operacaoAtivada = false;
             SetOperacao('+');
         }
         private void BotaoSubtracao_Click(object sender, EventArgs e)
         {
+            operacaoAtivada = false;
             SetOperacao('-');
         }
         private void BotaoMultiplcacao_Click(object sender, EventArgs e)
         {
+            operacaoAtivada = false;
             SetOperacao('*');
         }
         private void BotaoDivisao_Click(object sender, EventArgs e)
         {
+            operacaoAtivada = false;
             SetOperacao('/');
         }
         private void BotaoIgual_Click(object sender, EventArgs e)
@@ -229,31 +203,22 @@ namespace CalculadoraC_
         }
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Código não implementado para este botão","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            //this.ShowDialog();
             SetOperacao('%');
         }
         private void BotaoFracao_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //this.ShowDialog();
             valor1 = double.Parse(textBox1.Text);
             textBox1.Text = (1 / valor1).ToString();
         }
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //this.ShowDialog();
-            SetOperacao('^');
-            
-            
+            SetOperacao('^'); 
         }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {
-            contar++;
             if (double.TryParse(textBox1.Text, out valor1) && valor1 >= 0)
             {
-                textBox1.Text = Math.Sqrt(valor1).ToString(); // Calcula a raiz quadrada
+                textBox1.Text = Math.Round(Math.Sqrt(valor1),8).ToString(); // Calcula a raiz quadrada
             }
             else
             {
@@ -267,8 +232,6 @@ namespace CalculadoraC_
         }
         private void BotaoMaisMenos_Click(object sender, EventArgs e)
         {
-            //MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //this.ShowDialog();
             double x;
             x = double.Parse(textBox1.Text);
             x = x * -1;
@@ -280,7 +243,7 @@ namespace CalculadoraC_
         private void BotaoApagar_Click(object sender, EventArgs e)
         {
             if (textBox1.Text!=string.Empty) { textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1); }
+            else { textBox1.Text = "0"; }
         }
-      
     }
 }

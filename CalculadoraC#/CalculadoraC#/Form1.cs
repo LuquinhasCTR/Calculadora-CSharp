@@ -286,8 +286,12 @@ namespace CalculadoraC_
         }
         private void BotaoMaisMenos_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.ShowDialog();
+            //MessageBox.Show("Código não implementado para este botão", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //this.ShowDialog();
+            double x;
+            x = double.Parse(textBox1.Text);
+            x = x * -1;
+            textBox1.Text = x.ToString();
         }
         /// <summary>
         /// Apaga o último caracter da string

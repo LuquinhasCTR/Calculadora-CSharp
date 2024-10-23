@@ -433,8 +433,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(423, 532);
+            this.MinimumSize = new System.Drawing.Size(423, 532);
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);

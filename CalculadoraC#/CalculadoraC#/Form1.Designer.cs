@@ -69,7 +69,7 @@
             this.BotaoIgual.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoIgual.Name = "BotaoIgual";
             this.BotaoIgual.Size = new System.Drawing.Size(90, 53);
-            this.BotaoIgual.TabIndex = 24;
+            this.BotaoIgual.TabIndex = 23;
             this.BotaoIgual.Text = "=";
             this.BotaoIgual.UseVisualStyleBackColor = true;
             this.BotaoIgual.Click += new System.EventHandler(this.BotaoIgual_Click);
@@ -82,7 +82,7 @@
             this.BotaoAdicao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoAdicao.Name = "BotaoAdicao";
             this.BotaoAdicao.Size = new System.Drawing.Size(90, 53);
-            this.BotaoAdicao.TabIndex = 20;
+            this.BotaoAdicao.TabIndex = 19;
             this.BotaoAdicao.Text = "+";
             this.BotaoAdicao.UseVisualStyleBackColor = true;
             this.BotaoAdicao.Click += new System.EventHandler(this.BotaoAdicao_Click);
@@ -95,7 +95,7 @@
             this.BotaoSubtracao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoSubtracao.Name = "BotaoSubtracao";
             this.BotaoSubtracao.Size = new System.Drawing.Size(90, 53);
-            this.BotaoSubtracao.TabIndex = 16;
+            this.BotaoSubtracao.TabIndex = 15;
             this.BotaoSubtracao.Text = "-";
             this.BotaoSubtracao.UseVisualStyleBackColor = true;
             this.BotaoSubtracao.Click += new System.EventHandler(this.BotaoSubtracao_Click);
@@ -108,7 +108,7 @@
             this.BotaoMultiplcacao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoMultiplcacao.Name = "BotaoMultiplcacao";
             this.BotaoMultiplcacao.Size = new System.Drawing.Size(90, 53);
-            this.BotaoMultiplcacao.TabIndex = 12;
+            this.BotaoMultiplcacao.TabIndex = 11;
             this.BotaoMultiplcacao.Text = "x";
             this.BotaoMultiplcacao.UseVisualStyleBackColor = true;
             this.BotaoMultiplcacao.Click += new System.EventHandler(this.BotaoMultiplcacao_Click);
@@ -121,7 +121,7 @@
             this.BotaoDivisao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoDivisao.Name = "BotaoDivisao";
             this.BotaoDivisao.Size = new System.Drawing.Size(90, 53);
-            this.BotaoDivisao.TabIndex = 8;
+            this.BotaoDivisao.TabIndex = 7;
             this.BotaoDivisao.Text = "÷";
             this.BotaoDivisao.UseVisualStyleBackColor = true;
             this.BotaoDivisao.Click += new System.EventHandler(this.BotaoDivisao_Click);
@@ -134,7 +134,7 @@
             this.BotaoMaisMenos.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoMaisMenos.Name = "BotaoMaisMenos";
             this.BotaoMaisMenos.Size = new System.Drawing.Size(90, 53);
-            this.BotaoMaisMenos.TabIndex = 21;
+            this.BotaoMaisMenos.TabIndex = 20;
             this.BotaoMaisMenos.Text = "+/-";
             this.BotaoMaisMenos.UseVisualStyleBackColor = true;
             this.BotaoMaisMenos.Click += new System.EventHandler(this.BotaoMaisMenos_Click);
@@ -146,7 +146,7 @@
             this.BotaoUm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoUm.Name = "BotaoUm";
             this.BotaoUm.Size = new System.Drawing.Size(90, 53);
-            this.BotaoUm.TabIndex = 17;
+            this.BotaoUm.TabIndex = 16;
             this.BotaoUm.Text = "1";
             this.BotaoUm.UseVisualStyleBackColor = true;
             this.BotaoUm.Click += new System.EventHandler(this.BotaoUm_Click);
@@ -158,7 +158,7 @@
             this.BotaoZero.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoZero.Name = "BotaoZero";
             this.BotaoZero.Size = new System.Drawing.Size(90, 53);
-            this.BotaoZero.TabIndex = 22;
+            this.BotaoZero.TabIndex = 21;
             this.BotaoZero.Text = "0";
             this.BotaoZero.UseVisualStyleBackColor = true;
             this.BotaoZero.Click += new System.EventHandler(this.BotaoZero_Click);
@@ -171,7 +171,7 @@
             this.BotaoVirgula.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoVirgula.Name = "BotaoVirgula";
             this.BotaoVirgula.Size = new System.Drawing.Size(90, 53);
-            this.BotaoVirgula.TabIndex = 23;
+            this.BotaoVirgula.TabIndex = 22;
             this.BotaoVirgula.Text = ",";
             this.BotaoVirgula.UseVisualStyleBackColor = true;
             this.BotaoVirgula.Click += new System.EventHandler(this.BotaoVirgula_Click);
@@ -183,7 +183,7 @@
             this.BotaoDois.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoDois.Name = "BotaoDois";
             this.BotaoDois.Size = new System.Drawing.Size(90, 53);
-            this.BotaoDois.TabIndex = 18;
+            this.BotaoDois.TabIndex = 17;
             this.BotaoDois.Text = "2";
             this.BotaoDois.UseVisualStyleBackColor = true;
             this.BotaoDois.Click += new System.EventHandler(this.BotaoDois_Click);
@@ -196,7 +196,7 @@
             this.BotaoTres.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoTres.Name = "BotaoTres";
             this.BotaoTres.Size = new System.Drawing.Size(90, 53);
-            this.BotaoTres.TabIndex = 19;
+            this.BotaoTres.TabIndex = 18;
             this.BotaoTres.Text = "3";
             this.BotaoTres.UseVisualStyleBackColor = true;
             this.BotaoTres.Click += new System.EventHandler(this.BotaoTres_Click);
@@ -208,7 +208,7 @@
             this.BotaoQuatro.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoQuatro.Name = "BotaoQuatro";
             this.BotaoQuatro.Size = new System.Drawing.Size(90, 53);
-            this.BotaoQuatro.TabIndex = 13;
+            this.BotaoQuatro.TabIndex = 12;
             this.BotaoQuatro.Text = "4";
             this.BotaoQuatro.UseVisualStyleBackColor = true;
             this.BotaoQuatro.Click += new System.EventHandler(this.BotaoQuatro_Click);
@@ -220,7 +220,7 @@
             this.BotaoSete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoSete.Name = "BotaoSete";
             this.BotaoSete.Size = new System.Drawing.Size(90, 53);
-            this.BotaoSete.TabIndex = 9;
+            this.BotaoSete.TabIndex = 8;
             this.BotaoSete.Text = "7";
             this.BotaoSete.UseVisualStyleBackColor = true;
             this.BotaoSete.Click += new System.EventHandler(this.BotaoSete_Click);
@@ -232,7 +232,7 @@
             this.BotaoCinco.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoCinco.Name = "BotaoCinco";
             this.BotaoCinco.Size = new System.Drawing.Size(90, 53);
-            this.BotaoCinco.TabIndex = 14;
+            this.BotaoCinco.TabIndex = 13;
             this.BotaoCinco.Text = "5";
             this.BotaoCinco.UseVisualStyleBackColor = true;
             this.BotaoCinco.Click += new System.EventHandler(this.BotaoCinco_Click);
@@ -244,7 +244,7 @@
             this.BotaoOito.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoOito.Name = "BotaoOito";
             this.BotaoOito.Size = new System.Drawing.Size(90, 53);
-            this.BotaoOito.TabIndex = 10;
+            this.BotaoOito.TabIndex = 9;
             this.BotaoOito.Text = "8";
             this.BotaoOito.UseVisualStyleBackColor = true;
             this.BotaoOito.Click += new System.EventHandler(this.BotaoOito_Click);
@@ -257,7 +257,7 @@
             this.BotaoNove.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoNove.Name = "BotaoNove";
             this.BotaoNove.Size = new System.Drawing.Size(90, 53);
-            this.BotaoNove.TabIndex = 11;
+            this.BotaoNove.TabIndex = 10;
             this.BotaoNove.Text = "9";
             this.BotaoNove.UseVisualStyleBackColor = true;
             this.BotaoNove.Click += new System.EventHandler(this.BotaoNove_Click);
@@ -270,7 +270,7 @@
             this.BotaoSeis.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoSeis.Name = "BotaoSeis";
             this.BotaoSeis.Size = new System.Drawing.Size(90, 53);
-            this.BotaoSeis.TabIndex = 15;
+            this.BotaoSeis.TabIndex = 14;
             this.BotaoSeis.Text = "6";
             this.BotaoSeis.UseVisualStyleBackColor = true;
             this.BotaoSeis.Click += new System.EventHandler(this.BotaoSeis_Click);
@@ -283,7 +283,7 @@
             this.BotaoFracao.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoFracao.Name = "BotaoFracao";
             this.BotaoFracao.Size = new System.Drawing.Size(90, 53);
-            this.BotaoFracao.TabIndex = 5;
+            this.BotaoFracao.TabIndex = 4;
             this.BotaoFracao.Text = "1/x";
             this.BotaoFracao.UseVisualStyleBackColor = true;
             this.BotaoFracao.Click += new System.EventHandler(this.BotaoFracao_Click);
@@ -296,7 +296,7 @@
             this.BotaoRaiz.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoRaiz.Name = "BotaoRaiz";
             this.BotaoRaiz.Size = new System.Drawing.Size(90, 53);
-            this.BotaoRaiz.TabIndex = 7;
+            this.BotaoRaiz.TabIndex = 6;
             this.BotaoRaiz.Text = "²√x.";
             this.BotaoRaiz.UseVisualStyleBackColor = true;
             this.BotaoRaiz.Click += new System.EventHandler(this.BotaoRaiz_Click);
@@ -309,7 +309,7 @@
             this.BotaoPotencia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoPotencia.Name = "BotaoPotencia";
             this.BotaoPotencia.Size = new System.Drawing.Size(90, 53);
-            this.BotaoPotencia.TabIndex = 6;
+            this.BotaoPotencia.TabIndex = 5;
             this.BotaoPotencia.Text = "x²";
             this.BotaoPotencia.UseVisualStyleBackColor = true;
             this.BotaoPotencia.Click += new System.EventHandler(this.BotaoPotencia_Click);
@@ -322,7 +322,7 @@
             this.BotaoPorcentagem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoPorcentagem.Name = "BotaoPorcentagem";
             this.BotaoPorcentagem.Size = new System.Drawing.Size(90, 38);
-            this.BotaoPorcentagem.TabIndex = 1;
+            this.BotaoPorcentagem.TabIndex = 0;
             this.BotaoPorcentagem.Text = "%";
             this.BotaoPorcentagem.UseVisualStyleBackColor = true;
             this.BotaoPorcentagem.Click += new System.EventHandler(this.BotaoPorcentagem_Click);
@@ -335,7 +335,7 @@
             this.BotaoCE.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoCE.Name = "BotaoCE";
             this.BotaoCE.Size = new System.Drawing.Size(90, 38);
-            this.BotaoCE.TabIndex = 2;
+            this.BotaoCE.TabIndex = 1;
             this.BotaoCE.Text = "CE";
             this.BotaoCE.UseVisualStyleBackColor = true;
             this.BotaoCE.Click += new System.EventHandler(this.BotaoCE_Click);
@@ -348,7 +348,7 @@
             this.BotaoC.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoC.Name = "BotaoC";
             this.BotaoC.Size = new System.Drawing.Size(90, 38);
-            this.BotaoC.TabIndex = 3;
+            this.BotaoC.TabIndex = 2;
             this.BotaoC.Text = "C";
             this.BotaoC.UseVisualStyleBackColor = true;
             this.BotaoC.Click += new System.EventHandler(this.BotaoC_Click);
@@ -361,7 +361,7 @@
             this.BotaoApagar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.BotaoApagar.Name = "BotaoApagar";
             this.BotaoApagar.Size = new System.Drawing.Size(90, 38);
-            this.BotaoApagar.TabIndex = 4;
+            this.BotaoApagar.TabIndex = 3;
             this.BotaoApagar.Text = "⌫";
             this.BotaoApagar.UseVisualStyleBackColor = true;
             this.BotaoApagar.Click += new System.EventHandler(this.BotaoApagar_Click);
@@ -375,7 +375,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox1.Size = new System.Drawing.Size(380, 62);
-            this.textBox1.TabIndex = 0;
+            this.textBox1.TabIndex = 24;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 

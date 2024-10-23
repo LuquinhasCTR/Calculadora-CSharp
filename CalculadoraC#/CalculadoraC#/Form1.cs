@@ -72,7 +72,7 @@ namespace CalculadoraC_
             valor1 = 0;
             valor2 = 0;
             operacao = '\0';  // Reseta a operação
-            textBox1.Text = "0"; // Reseta o display para 0
+            textBox1.Text = "0"; // Reseta a textBox para 0
         }
         private void BotaoOperacao_Click(object sender, EventArgs e)
         {
@@ -158,7 +158,7 @@ namespace CalculadoraC_
         }
         private void BotaoSeis_Click(object sender, EventArgs e)
         {
-            if (contar >= 0)
+            if (contar >= 2)
             {
                 textBox1.Text = "0";
                 valor1 = 0;

@@ -248,13 +248,16 @@ namespace CalculadoraC_
                 case '^':   
                         textBox1.Text = Math.Pow(valor1, valor2).ToString(); // Calculo de potência                    
                     break;
+                case '%': textBox1.Text=((valor1/100)*valor2).ToString();
+                    break;
             }
             operacaoPressionada = false;
         }
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Código não implementado para este botão","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            this.ShowDialog();
+            //MessageBox.Show("Código não implementado para este botão","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            //this.ShowDialog();
+            SetOperacao('%');
         }
         private void BotaoFracao_Click(object sender, EventArgs e)
         {

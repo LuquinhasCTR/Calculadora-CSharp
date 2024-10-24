@@ -18,7 +18,6 @@ namespace CalculadoraC_
         /// Armazena o tipo de operação
         /// </summary>
         public char operacao;
-
         /// <summary>
         /// Armazena os valores atribuídos
         /// </summary>
@@ -34,14 +33,20 @@ namespace CalculadoraC_
         private void AdicionarNumero(string numero)
         {
             if ((textBox1.Text == "0") || operacaoPressionada)
+            {
                 textBox1.Clear();
+            }
             operacaoPressionada = false;
             textBox1.Text += numero;
+        }
+        private void ApagarZero()
+        {
+
         }
         /// <summary>
         /// Define a operação
         /// </summary>
-        private void SetOperacao(char op)
+        private void Operacao(char op)
         {
             valor1 = Double.Parse(textBox1.Text);
             operacao = op;
@@ -60,18 +65,23 @@ namespace CalculadoraC_
                 AdicionarNumero("0");
                 operacaoAtivada = false;
             }
+            
+            //if ()
         }
         public Form1()
         {
+
             InitializeComponent();   
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "Calculadora";
-            textBox1.Text = "0";  // Inicializa o TextBox com 0
+            textBox1.Text = "0";
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
-        { if (textBox1.Text == string.Empty) { textBox1.Text = "0"; } }
+        { 
+            
+        }
         private void BotaoC_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
@@ -84,7 +94,7 @@ namespace CalculadoraC_
         {
             valor1 = Double.Parse(textBox1.Text);  // Armazena o primeiro valor
             Button botao = (Button)sender;
-            operacao = Convert.ToChar(botao.Text);  // Armazena a operação
+            operacao = Convert.ToChar(botao.Text);  // Armazena o tipo de operação
             operacaoPressionada = true;
         }
         private void BotaoNumero_Click(object sender, EventArgs e)
@@ -155,22 +165,22 @@ namespace CalculadoraC_
         private void BotaoAdicao_Click(object sender, EventArgs e)
         {
             operacaoAtivada = false;
-            SetOperacao('+');
+            Operacao('+');
         }
         private void BotaoSubtracao_Click(object sender, EventArgs e)
         {
             operacaoAtivada = false;
-            SetOperacao('-');
+            Operacao('-');
         }
         private void BotaoMultiplcacao_Click(object sender, EventArgs e)
         {
             operacaoAtivada = false;
-            SetOperacao('*');
+            Operacao('*');
         }
         private void BotaoDivisao_Click(object sender, EventArgs e)
         {
             operacaoAtivada = false;
-            SetOperacao('/');
+            Operacao('/');
         }
         private void BotaoIgual_Click(object sender, EventArgs e)
         {
@@ -203,7 +213,7 @@ namespace CalculadoraC_
         }
         private void BotaoPorcentagem_Click(object sender, EventArgs e)
         {
-            SetOperacao('%');
+            Operacao('%');
         }
         private void BotaoFracao_Click(object sender, EventArgs e)
         {
@@ -212,7 +222,7 @@ namespace CalculadoraC_
         }
         private void BotaoPotencia_Click(object sender, EventArgs e)
         {
-            SetOperacao('^'); 
+            Operacao('^'); 
         }
         private void BotaoRaiz_Click(object sender, EventArgs e)
         {
@@ -243,7 +253,6 @@ namespace CalculadoraC_
         private void BotaoApagar_Click(object sender, EventArgs e)
         {
             if (textBox1.Text!=string.Empty) { textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1); }
-            else { textBox1.Text = "0"; }
         }
     }
 }
